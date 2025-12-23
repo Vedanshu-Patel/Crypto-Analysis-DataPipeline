@@ -183,24 +183,3 @@ SELECT * FROM top_5_gainers;
 SELECT * FROM top_5_losers;
 ```
 
-## 📁 Project Structure
-
-```
-Crypto-Analysis-DataPipeline-master/
-├── dags/
-│   └── crypto_dag.py          # Kafka producer (fetches from CoinGecko API)
-├── spark_streaming/
-│   ├── kafka_streaming.py      # Spark streaming consumer (Kafka → Parquet)
-│   ├── analytics.py            # Analytics job (Parquet → PostgreSQL)
-│   └── postgresql-42.7.5.jar   # PostgreSQL JDBC driver
-├── Read me/
-│   ├── env.txt                 # Environment setup guide
-│   ├── Kafka Commands and links.txt
-│   ├── pipeline commands.txt   # Pipeline execution commands
-│   ├── postgres setup.txt      # PostgreSQL setup instructions
-│   ├── Spark submit command.txt
-│   └── zookeeper commands.txt
-├── requirements.txt            # Python dependencies
-└── README.md                   # This file
-```
-
